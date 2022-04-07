@@ -2,7 +2,8 @@
 
 Simple NixOS-WSL configuration with home-manager.
 
-To install, build the tarball with a existing nix installation (change the hostname and username in `flake.nix` and `configuration.nix` as needed).
+- An existing nix installation is needed to build the installation tarball
+- Clone this repo and modify the hostname and username as needed (in `configuration.nix` or `flake.nix`)
 
 ```console
 nix build .#nixosConfigurations.HOSTNAME.config.system.build.installer
